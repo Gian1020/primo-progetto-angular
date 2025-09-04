@@ -1,4 +1,4 @@
-import { Component, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-domanda',
@@ -8,6 +8,17 @@ import { Component, Input, Output } from '@angular/core';
 })
 export class Domanda {
  @Input() domanda!: { question: string; options: Array<string>; answer:Number };
+ @Output() datiRisposta = new EventEmitter<{id: number, risposta: number}>();
  
+rispostaData = document.querySelectorAll();
+
+ 
+
+//  fatto() {
+//   const risposta = {
+//      id:    ,
+//      risposta: 
+//   }
+//  }
 }
    

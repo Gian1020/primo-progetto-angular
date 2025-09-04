@@ -2,10 +2,11 @@
 <div>{{domanda.question}}</div>
 
 
-<input type="radio" id="0" name="risposte"><label for="0">{{domanda.options[0]}}</label>
-<input type="radio" id="1" name="risposte"><label for="1">{{domanda.options[1]}}</label>
-<input type="radio" id="2" name="risposte"><label for="2">{{domanda.options[2]}}</label>
-<input type="radio" id="3" name="risposte"><label for="3">{{domanda.options[3]}}</label>
+<input type="radio" id="0" name="risposte" value="0"><label for="0">{{domanda.options[0]}}</label>
+<input type="radio" id="1" name="risposte" value="1"><label for="1">{{domanda.options[1]}}</label>
+<input type="radio" id="2" name="risposte" value="2"><label for="2">{{domanda.options[2]}}</label>
+<input type="radio" id="3" name="risposte" value="3"><label for="3">{{domanda.options[3]}}</label>
 
-<button (click) = fatto()></button>
+ <div>{{ rispostaData }}</div>
+<button>Invia</button>
 
