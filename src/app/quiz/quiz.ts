@@ -3,6 +3,7 @@ import { Domanda } from '../domanda/domanda';
 
 @Component({
   selector: 'app-quiz',
+  standalone: true,
   imports: [Domanda],
   templateUrl: './quiz.html',
   styleUrl: './quiz.css'
@@ -62,8 +63,10 @@ export class Quiz {
 ];
  i:number=0;
 
- prossimaDomanda(i:number){
-   i++
+ gestisciRisposta(evento: boolean){
+  if(evento){
+    this.i++;
+  }
  }
 
 
